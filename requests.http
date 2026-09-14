@@ -1,0 +1,45 @@
+POST http://localhost:8080/api/destinations
+Content-Type: application/json
+
+{
+  "name": "Istanbul",
+  "country": "Türkiye",
+  "description": "A vibrant city connecting Europe and Asia."
+}
+###
+POST http://localhost:8080/api/destinations
+Content-Type: application/json
+
+{
+  "name": "Cairo",
+  "country": "Egypt",
+  "description": "A historic city known for the Pyramids of Giza and the Nile."
+}
+
+###
+
+POST http://localhost:8080/api/destinations
+Content-Type: application/json
+
+{
+  "name": "Dubai",
+  "country": "United Arab Emirates",
+  "description": "A modern city known for its architecture, shopping, and attractions."
+}
+###
+DELETE http://localhost:8080/api/destinations/6
+###
+DELETE http://localhost:8080/api/destinations/4
+###
+DELETE http://localhost:8080/api/destinations/5
+###
+DELETE http://localhost:8080/api/destinations/7
+###
+PUT http://localhost:8080/api/destinations/2
+Content-Type: application/json
+
+{
+  "name": "Cairo",
+  "country": "Egypt",
+  "description": "A historic destination famous for the Pyramids of Giza, the Nile, and ancient Egyptian history."
+}
